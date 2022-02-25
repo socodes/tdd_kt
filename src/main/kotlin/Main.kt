@@ -1,7 +1,17 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
+import junit.framework.Assert.assertEquals
+import org.junit.Test
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+class CalculatorTest {
+    @Test
+    fun testMultiply2By2(){
+        val calculator = Calculator()
+        val result = calculator.parse("2 * 2")
+        assertEquals(4,result)
+    }
+    @Test
+    fun testDivide2By2(){
+        val calculator = Calculator()
+        val result = calculator.parse("2 / 2")
+        assertEquals(1,result)
+    }
 }
