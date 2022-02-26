@@ -4,7 +4,7 @@ JUnit 4 and kotlin.test libraries are used.
 
 Tests cover four main operations in a calculator and greatest common divisor operations.
 
-###Results:
+### Results:
 
     testGCD81and153:
     expected: 9
